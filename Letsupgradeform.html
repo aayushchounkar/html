@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>Lets's Upgrage form
+    </title>
+    </head>
+    <style>
+        body {
+            background-color: rgb(16, 8, 1);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            border: 5px solid rgb(247, 112, 2);
+            width: 20%;
+            height: 650px;
+            padding: 10px;
+            background-color: rgb(16, 8, 1);
+            margin: auto;
+        }
+        
+
+        .form-header{
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        .form-header img{
+            margin-top: 10px;
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: rgb(16, 8, 1);
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form>
+            <H4>LET'S UPGRADE</H4>
+            <fieldset>
+                <div class="form-header">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8aPpQrEzjhOPbrpvsFJuFPBqSFrDqZyRqTB5leAldiw&s" alt="LU Logo">
+                    </div>
+                    <div>
+                        <p>Addmission Enquiry:<br>
+                           Fill the above form<br></p>
+                    </div>
+                </div>
+                First name<br>
+                <input type="text" name="firstname">
+                <br>
+                Last name<br>
+                <input type="text" name="lastname">
+                <br>
+            </fieldset>
+                Enter your contanct number:<br>
+                <input type="num" name="Contact number:"><br>
+                <br>
+
+                Highest Qualification:<br>
+                <input list="Highest Qualification" name="Highest Qualification">
+                <datalist id="Highest Qualification">
+                    <option value="10TH"></option>
+                    <option value="12TH"></option>
+                    <option value="GRADUATED"></option>
+                    <option value="PG"></option>
+                </datalist>
+                <br>
+                <br>
+                <label>ADDRESS:</label>
+                <textarea name="address" style="resize:none"></textarea>
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" checked>male
+                <input type="radio" name="gender" value="female">female
+                <input type="radio" name="gender" value="other">other<br>
+                <br>
+                Programming languages intrested in:<br>
+                <input list=" Programming languages intrested in" name=" Programming languages intrested in">
+                <datalist id=" Programming languages intrested in">
+                    <option value="c"></option>
+                    <option value="c++"></option>
+                    <option value="Java"></option>
+                    <option value="python"></option>
+                </datalist>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            <br>
+            <p>🚀EAT.SLEEP.CODE.REPEAT🚀</p>
+        </form>
+    </center>
+</body>
+</html>
